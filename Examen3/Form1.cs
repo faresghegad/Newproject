@@ -132,5 +132,23 @@ namespace Examen3
         {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (listetudient.SelectedIndex < 0)
+                return;
+            Ajouter_Cour A_Cour = new Ajouter_Cour(Etudiants[listetudient.SelectedIndex].Numero_etudiant);
+            A_Cour.ShowDialog();
+            update_form();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            if (listetudient.SelectedIndex < 0 || listcours.SelectedIndex<0)
+                return;
+            Modifier_Cour M_Cour = new Modifier_Cour(Etudiants[listetudient.SelectedIndex].Cours[listcours.SelectedIndex].ToString(), Etudiants[listetudient.SelectedIndex].Numero_etudiant);
+            M_Cour.ShowDialog();
+            update_form();
+        }
     }
 }

@@ -154,14 +154,23 @@ namespace Examen3
         public static void ajouter_Note(Note note, string Numero_etudiant)
         {
             string address = "donnees\\" + Numero_etudiant + "\\Notes.txt";
+
             if (File.Exists(address))
-                File.WriteAllText(address, File.ReadAllText(address)+"\n"+note.Numero_etudiant + "¿" + note.Numero_cours + "¿" + note.N_value);
+            {
+                File.WriteAllText(address, File.ReadAllText(address) + "\n" + note.Numero_etudiant + "¿" + note.Numero_cours + "¿" + note.N_value);
+            }
+            else 
+            {
+                File.WriteAllText(address, note.Numero_etudiant + "¿" + note.Numero_cours + "¿" + note.N_value);
+            }
         }
         public static void ajouter_Cours(Cour cour, string Numero_etudiant)
         {
             string address = "donnees\\" + Numero_etudiant + "\\Cours.txt";
             if (File.Exists(address))
                 File.WriteAllText(address, File.ReadAllText(address)+"\n"+cour.Numero_cours + "¿" + cour.Code + "¿" + cour.Titre);
+            else
+                File.WriteAllText(address, cour.Numero_cours + "¿" + cour.Code + "¿" + cour.Titre);
         }
 
         public static bool verifier_valeur(string valeur)

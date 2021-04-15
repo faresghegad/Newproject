@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajouter_Cour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Cour.Designer.cs">
+      <DependentUpon>Ajouter_Cour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ajouter_Etudient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modifier_Cour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Cour.Designer.cs">
+      <DependentUpon>Modifier_Cour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modifier_Etudient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +83,17 @@
     <Compile Include="Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajouter_Cour.resx">
+      <DependentUpon>Ajouter_Cour.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ajouter_Etudient.resx">
       <DependentUpon>Ajouter_Etudient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Cour.resx">
+      <DependentUpon>Modifier_Cour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modifier_Etudient.resx">
       <DependentUpon>Modifier_Etudient.cs</DependentUpon>

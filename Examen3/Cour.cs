@@ -32,5 +32,10 @@ namespace Examen3
             get { return this.titre; }
             set { this.titre = value; }
         }
+
+        public string ToString() 
+        {
+            return Numero_cours + "¿" + Code + "¿" + Titre;
+        }
     }
 }
