@@ -107,15 +107,15 @@ namespace Examen3
 
         private void etudientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ajouter_Etudient A_Etudient = new Ajouter_Etudient();
-            A_Etudient.ShowDialog();
+            Ajouter Add = new Ajouter("etudient");
+            Add.ShowDialog();
             update_form();
         }
 
         private void afficherToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ajouter_Etudient A_Etudient = new Ajouter_Etudient();
-            A_Etudient.ShowDialog();
+            Ajouter Add = new Ajouter("etudient");
+            Add.ShowDialog();
             update_form();
         }
 
@@ -137,8 +137,9 @@ namespace Examen3
         {
             if (listetudient.SelectedIndex < 0)
                 return;
-            Ajouter_Cour A_Cour = new Ajouter_Cour(Etudiants[listetudient.SelectedIndex].Numero_etudiant);
-            A_Cour.ShowDialog();
+            Ajouter Add = new Ajouter("cour");
+            Add.etudient = Etudiants[listetudient.SelectedIndex].Numero_etudiant;
+            Add.ShowDialog();
             update_form();
         }
 
@@ -168,8 +169,10 @@ namespace Examen3
         {
             if (listetudient.SelectedIndex < 0 || listcours.SelectedIndex < 0)
                 return;
-            Ajouter_Note A_Note = new Ajouter_Note(Etudiants[listetudient.SelectedIndex].ToString(), Etudiants[listetudient.SelectedIndex].Cours[listcours.SelectedIndex].ToString());
-            A_Note.ShowDialog();
+            Ajouter Add = new Ajouter("note");
+            Add.N_etudient = Etudiants[listetudient.SelectedIndex].ToString();
+            Add.N_cours = Etudiants[listetudient.SelectedIndex].Cours[listcours.SelectedIndex].ToString();
+            Add.ShowDialog();
             update_form();
         }
 

@@ -86,7 +86,7 @@ namespace Examen3
             this.modifierToolStripMenuItem,
             this.supprimerToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(207, 76);
             // 
             // afficherToolStripMenuItem
             // 
@@ -105,7 +105,7 @@ namespace Examen3
             // supprimerToolStripMenuItem
             // 
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.supprimerToolStripMenuItem.Text = "Supprimer";
             this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
@@ -211,26 +211,26 @@ namespace Examen3
             this.toolStripMenuItem5,
             this.toolStripMenuItem6});
             this.contextMenuStrip3.Name = "contextMenuStrip1";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(181, 76);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(211, 104);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 24);
-            this.toolStripMenuItem2.Text = "Ajouter un cour";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuItem2.Text = "Ajouter une note";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem5.Text = "Modifier";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click_1);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(210, 24);
             this.toolStripMenuItem6.Text = "Supprimer";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
@@ -284,13 +284,13 @@ namespace Examen3
             this.ajouterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.etudientToolStripMenuItem});
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             // 
             // etudientToolStripMenuItem
             // 
             this.etudientToolStripMenuItem.Name = "etudientToolStripMenuItem";
-            this.etudientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.etudientToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.etudientToolStripMenuItem.Text = "Etudient";
             this.etudientToolStripMenuItem.Click += new System.EventHandler(this.etudientToolStripMenuItem_Click);
             // 
