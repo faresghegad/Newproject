@@ -187,6 +187,20 @@ namespace Examen3
             }
             return true;
         }
+        public static bool verifier_valeur_double(string valeur)
+        {
+            if (valeur.Trim() == null)
+            {
+                return false;
+            }
+            string autorisi = "0123456789.,";
+            for (int i = 0; i < valeur.Length; i++)
+            {
+                if (!autorisi.Contains(valeur[i].ToString().ToUpper()))
+                    return false;
+            }
+            return true;
+        }
 
     }
 }

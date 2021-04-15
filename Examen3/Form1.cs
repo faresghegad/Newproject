@@ -150,5 +150,41 @@ namespace Examen3
             M_Cour.ShowDialog();
             update_form();
         }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            if (listnote.SelectedIndex < 0)
+                return;
+            Donnees.Supprimer_Note(Etudiants[listetudient.SelectedIndex].Notes[listnote.SelectedIndex], Etudiants[listetudient.SelectedIndex].Numero_etudiant);
+            update_form();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (listetudient.SelectedIndex < 0 || listcours.SelectedIndex < 0)
+                return;
+            Ajouter_Note A_Note = new Ajouter_Note(Etudiants[listetudient.SelectedIndex].ToString(), Etudiants[listetudient.SelectedIndex].Cours[listcours.SelectedIndex].ToString());
+            A_Note.ShowDialog();
+            update_form();
+        }
+
+        private void toolStripMenuItem5_Click_1(object sender, EventArgs e)
+        {
+            if (listetudient.SelectedIndex < 0 || listcours.SelectedIndex < 0 || listnote.SelectedIndex<0)
+                return;
+            Modifier_Note M_Note = new Modifier_Note(Etudiants[listetudient.SelectedIndex].ToString(), Etudiants[listetudient.SelectedIndex].Cours[listcours.SelectedIndex].ToString(),listnote.Items[listnote.SelectedIndex].ToString());
+            M_Note.ShowDialog();
+            update_form();
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

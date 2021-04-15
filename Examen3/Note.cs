@@ -34,5 +34,10 @@ namespace Examen3
             get { return this.note; }
             set { this.note = value; }
         }
+
+        public string ToString()
+        {
+            return Numero_etudiant + "¿" + Numero_cours + "¿" + N_value;
+        }
     }
 }
