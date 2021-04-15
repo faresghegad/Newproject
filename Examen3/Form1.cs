@@ -186,5 +186,13 @@ namespace Examen3
         {
             this.Close();
         }
+
+        private void supprimerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (listetudient.SelectedIndex < 0)
+                return;
+            Donnees.Supprimer_Etudient(Etudiants[listetudient.SelectedIndex]);
+            update_form();
+        }
     }
 }

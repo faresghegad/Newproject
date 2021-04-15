@@ -45,6 +45,10 @@ namespace Examen3
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.listnote = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,14 +60,10 @@ namespace Examen3
             this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.contextMenuStrip3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listetudient
@@ -86,7 +86,7 @@ namespace Examen3
             this.modifierToolStripMenuItem,
             this.supprimerToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(207, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
             // 
             // afficherToolStripMenuItem
             // 
@@ -105,8 +105,9 @@ namespace Examen3
             // supprimerToolStripMenuItem
             // 
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.supprimerToolStripMenuItem.Text = "Supprimer";
+            this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -202,6 +203,37 @@ namespace Examen3
             this.listnote.TabIndex = 15;
             this.listnote.SelectedIndexChanged += new System.EventHandler(this.listnote_SelectedIndexChanged);
             // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.contextMenuStrip3.Name = "contextMenuStrip1";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(181, 76);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem2.Text = "Ajouter un cour";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem5.Text = "Modifier";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click_1);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 24);
+            this.toolStripMenuItem6.Text = "Supprimer";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -235,7 +267,7 @@ namespace Examen3
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -252,13 +284,13 @@ namespace Examen3
             this.ajouterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.etudientToolStripMenuItem});
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             // 
             // etudientToolStripMenuItem
             // 
             this.etudientToolStripMenuItem.Name = "etudientToolStripMenuItem";
-            this.etudientToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.etudientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.etudientToolStripMenuItem.Text = "Etudient";
             this.etudientToolStripMenuItem.Click += new System.EventHandler(this.etudientToolStripMenuItem_Click);
             // 
@@ -275,51 +307,20 @@ namespace Examen3
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(161, 26);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(161, 26);
             this.modifierToolStripMenuItem1.Text = "Modifier";
             // 
             // supprimerToolStripMenuItem1
             // 
             this.supprimerToolStripMenuItem1.Name = "supprimerToolStripMenuItem1";
-            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(161, 26);
             this.supprimerToolStripMenuItem1.Text = "Supprimer";
-            // 
-            // contextMenuStrip3
-            // 
-            this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.contextMenuStrip3.Name = "contextMenuStrip1";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(181, 76);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(210, 24);
-            this.toolStripMenuItem2.Text = "Ajouter un cour";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(210, 24);
-            this.toolStripMenuItem5.Text = "Modifier";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click_1);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(210, 24);
-            this.toolStripMenuItem6.Text = "Supprimer";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // Form1
             // 
@@ -343,9 +344,9 @@ namespace Examen3
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);
+            this.contextMenuStrip3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.contextMenuStrip3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
