@@ -19,6 +19,10 @@ namespace Examen3
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new Form1());
             }
+            while (command != "exit")
+            {
+                command = Console.ReadLine();
+            }
         }
     }
 }
