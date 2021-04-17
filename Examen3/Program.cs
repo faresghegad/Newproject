@@ -13,16 +13,9 @@ namespace Examen3
         static void Main()
         {
             string command = Console.ReadLine();
-            if (command == "interface")
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
-            }
-            while (command != "exit")
-            {
-                command = Console.ReadLine();
-            }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
