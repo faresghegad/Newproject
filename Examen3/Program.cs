@@ -12,6 +12,7 @@ namespace Examen3
         [STAThread]
         static void Main()
         {
+            string command = Console.ReadLine();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
