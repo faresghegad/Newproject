@@ -9,6 +9,7 @@ namespace Examen3
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
+        /// fares
         [STAThread]
         static void Main()
         {
