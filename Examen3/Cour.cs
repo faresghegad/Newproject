@@ -10,6 +10,9 @@ namespace Examen3
         private string code;
         private string titre;
 
+        public Cour()
+        { }
+
         public Cour(string donnees)
         {
             numero_cours = donnees.Split('¿')[0];
