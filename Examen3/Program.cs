@@ -22,17 +22,13 @@ namespace Examen3
             }
             /*
              * code console ici
+             * 
+             * pour lire utiliser read() a la place de Console.ReadLine()
+             * les données dans les fichers sont séparés par ¿   pour l'écrire il faut faire Alt+1704  
+             * pour lire les données séparés utilisez par example: donne.Split('¿')[0];
+             * données c'est le text du ficher lu et [0] c'est la position de la donnée qu'on veut généralement, il ya sulement 0, 1 et 2 .
              */
-            /* pour lire utiliser read() a la place de Console.ReadLine()
-             * les donne dans les ficher sont séparés par ¿ pour l'ecrire il faut faire Alt+1704  
-             * pour lire les donne séparés utiliser par example: donne.Split('¿')[0];
-             * donne c'est le text du ficher lu et [0] c'est la position de la donne que on veut generalement il ya sulement 0,1 et 2 
-            */
-            //fares
-
-            /*
-             * fin du code console 
-             */
+            
             while (command != "exit")
             {
                 command = read();

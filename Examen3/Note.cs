@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Examen3
 {
-    class Note
+    public class Note
     {
         private string numero_etudiant;
         private string numero_cours;
