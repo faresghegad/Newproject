@@ -5,7 +5,8 @@ using System.Text;
 namespace Examen3
 {
     class Cour
-    {
+    {   
+        // attributs
         private string numero_cours;
         private string code;
         private string titre;
@@ -17,6 +18,7 @@ namespace Examen3
             titre = donnees.Split('¿')[2];
         }
 
+        // proprieter
         public string Numero_cours
         {
             get { return this.numero_cours; }
@@ -33,7 +35,8 @@ namespace Examen3
             set { this.titre = value; }
         }
 
-        public string ToString() 
+        // methode
+        public string ToString()
         {
             return Numero_cours + "¿" + Code + "¿" + Titre;
         }
