@@ -13,6 +13,7 @@ namespace Examen3
         public List<Note> Notes = new List<Note>();
         public Etudiant() { }
         
+        // constructur
         public Etudiant(string donnees)
         {
             Numero_etudiant =donnees.Split('¿')[0];
@@ -22,6 +23,7 @@ namespace Examen3
             Notes = Donnees.list_notes(Numero_etudiant);
         }
 
+        //proprieter
         public string Numero_etudiant
         {
             get { return this.numero_etudiant; }
@@ -37,6 +39,8 @@ namespace Examen3
             get { return this.prenom; }
             set { this.prenom = value; }
         }
+
+        //methode
         public string ToString()
         {
             return numero_etudiant + "¿" + nom + "¿" + prenom;
