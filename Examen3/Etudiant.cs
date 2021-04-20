@@ -5,15 +5,14 @@ using System.Text;
 namespace Examen3
 {
     class Etudiant
-    {
+    {   //attributs
         private string numero_etudiant;
         private string nom;
         private string prenom;
         public List<Cour> Cours = new List<Cour>();
         public List<Note> Notes = new List<Note>();
-        public Etudiant()
-        {
-        }
+        public Etudiant() { }
+        
         public Etudiant(string donnees)
         {
             Numero_etudiant =donnees.Split('¿')[0];
