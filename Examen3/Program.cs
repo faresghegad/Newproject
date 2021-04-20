@@ -28,7 +28,7 @@ namespace Examen3
              * pour lire les donne séparés utiliser par example: donne.Split('¿')[0];
              * donne c'est le text du ficher lu et [0] c'est la position de la donne que on veut generalement il ya sulement 0,1 et 2 
             */
-
+            //Belkacem
 
             /*
              * fin du code console 
