@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Text;
 
-namespace Examen3
+namespace StudentCourse
 {
     class Program
     {
