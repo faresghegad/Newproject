@@ -10,6 +10,8 @@ namespace Examen3
         private string numero_cours;
         private string note;
 
+        public Note() { }
+
         public Note(string donnees)
         {
             Numero_etudiant = donnees.Split('¿')[0];
